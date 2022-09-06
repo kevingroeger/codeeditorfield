@@ -1,6 +1,7 @@
 {
     "name": "kevingroeger/codeeditorfield",
     "description": "Code editor field for SilverStripe",
+    "homepage": "https://github.com/kevingroeger/codeeditorfield",
     "type": "silverstripe-vendormodule",
     "license": "MIT",
     "authors": [
