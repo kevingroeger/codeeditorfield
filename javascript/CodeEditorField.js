@@ -13,7 +13,6 @@
 
                 $($div).insertAfter(this);
                 ace.config.set('modePath', this.data('ace-path'));
-                ace.config.set('workerPath', this.data('ace-path'));
                 ace.config.set('themePath', this.data('ace-path'));
                 var editor = ace.edit(divID);
 
@@ -35,14 +34,11 @@
                 editor.setTheme('ace/theme/' + this.data('theme'));
                 var lineHeight = (editor.renderer.lineHeight > 1 ? editor.renderer.lineHeight : 16)
 
-                $div.css('min-height', lineHeight * textarea.attr('rows') + 35 + 'px');
+                $($div).css('min-height', lineHeight * textarea.attr('rows') + 35 + 'px');
 
-                editor.resizable = true
-                editor.resize("both");
-                this.setEditor(editor);
                 this.addClass('done');
 
-                this._super(e);
+                this._super();
             },
         });
     });
