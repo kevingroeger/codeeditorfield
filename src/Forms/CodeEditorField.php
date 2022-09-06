@@ -8,19 +8,38 @@ use SilverStripe\View\Requirements;
 class CodeEditorField extends TextareaField
 {
     private $height = 300;
-    private $mode = 'ace/mode/text';
-    private $theme = 'ace/theme/monokai';
+    private $mode = 'html';
+    private $theme = 'twilight';
+
+    function getAcePath() {
+        return "kevingroeger/codeeditorfield:thirdparty/ace/";
+    }
 
     public function Field($properties = [])
     {
-        Requirements::javascript('kevingroeger/codeeditorfield:thirdparty/ace/ace.js');
-        Requirements::javascript('kevingroeger/codeeditorfield:javascript/CodeEditorField.js');
+        $acePath = $this->getAcePath();
 
-        $this->addExtraClass('codeeditorfield');
+        Requirements::javascript($acePath . "ace.js");
+        Requirements::javascript($acePath . "mode-" . $this->getMode() . ".js");
+        Requirements::javascript($acePath . "theme-" . $this->getTheme() . ".js");
+        Requirements::javascript('kevingroeger/codeeditorfield:javascript/CodeEditorField.js');
+        Requirements::javascript('kevingroeger/codeeditorfield:css/CodeEditorField.css');
+
+        $this->addExtraClass('codeeditor');
 
         return parent::Field($properties);
     }
 
+    public function getAttributes() {
+        return array_merge(
+            parent::getAttributes(),
+            array(
+                'data-mode' => $this->getMode(),
+                'data-ace-path' => $this->getAcePath(),
+                'data-theme' => $this->getTheme()
+            )
+        );
+    }
     /**
      * Set height of editor in pixels
      * @param int $height Height of editor

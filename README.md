@@ -18,8 +18,10 @@ $fields->push(CodeEditorField::create('MyCode', 'Enter Source Code Here'));
 $fields->push($myCodeEditorField = CodeEditorField::create('MyCode', 'Enter Source Code Here'));
 
 // set mode, eg. "html" or "json"
-$myCodeEditorField->setMode('ace/mode/html');
+// default is html
+$myCodeEditorField->setMode('html');
 
 // set theme, eg. "monokai" or "twilight"
-$myCodeEditorField->setTheme('ace/theme/monokai');
+// default is twilight
+$myCodeEditorField->setTheme('monokai');
 ```

@@ -13,7 +13,8 @@
     "extra": {
         "expose": [
             "thirdparty/ace",
-            "javascript"
+            "javascript",
+            "css"
         ]
     },
     "minimum-stability": "dev",
