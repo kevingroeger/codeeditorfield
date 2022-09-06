@@ -1,6 +1,6 @@
 # Code Editor Field for SilverStripe 4
 
-Creates an Ace Code Editor (https://ace.c9.io/)
+Creates an [Ace Code Editor]((https://ace.c9.io/)) 
 
 ## Installation
 
@@ -25,3 +25,13 @@ $myCodeEditorField->setMode('html');
 // default is twilight
 $myCodeEditorField->setTheme('monokai');
 ```
+
+### Thanks
+
+This package was highly inspired by these two packages:
+
+- [https://github.com/jinjie/codeeditorfield](https://github.com/jinjie/codeeditorfield)
+
+- [https://github.com/nathancox/silverstripe-codeeditorfield](https://github.com/jinjie/codeeditorfield)
+
+
