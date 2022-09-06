@@ -1,0 +1,23 @@
+{
+    "name": "kevingroeger/codeeditorfield",
+    "description": "Code editor field for SilverStripe",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Gröger",
+            "email": "admin@kevingroeger.de"
+        }
+    ],
+    "extra": {
+        "expose": [
+            "thirdparty/ace",
+            "javascript"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "silverstripe/framework": "^4",
+        "php": "^7.4 || ^8.0"
+    }
+}
