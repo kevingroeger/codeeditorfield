@@ -19,7 +19,7 @@ $fields->push($myCodeEditorField = CodeEditorField::create('MyCode', 'Enter Sour
 
 // set mode, eg. "html" or "json"
 // default is html
-$myCodeEditorField->setMode('html');
+$myCodeEditorField->setMode('ace/mode/html');
 
 // set theme, eg. "monokai" or "twilight"
 // default is twilight

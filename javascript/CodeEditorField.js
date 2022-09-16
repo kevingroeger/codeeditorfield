@@ -26,7 +26,7 @@ editor.session.setWrapLimitRange(null, null);
 editor.session.setUseWrapMode(true);
 
 // set the mode (ie syntax highlighting)
-editor.getSession().setMode('ace/mode/' + textarea.data('mode'));
+editor.getSession().setMode(textarea.data('mode'));
 editor.setTheme('ace/theme/' + textarea.data('theme'));
 var lineHeight = (editor.renderer.lineHeight > 1 ? editor.renderer.lineHeight : 16)
 
