@@ -20,6 +20,7 @@ class CodeEditorField extends TextareaField
         $acePath = $this->getAcePath();
 
         Requirements::javascript($acePath . "ace.js");
+        Requirements::javascript($acePath . "mode-" . $this->getMode() . ".js");
         Requirements::javascript($acePath . "theme-" . $this->getTheme() . ".js");
         Requirements::javascript('kevingroeger/codeeditorfield:javascript/CodeEditorField.js');
         Requirements::css('kevingroeger/codeeditorfield:css/CodeEditorField.css');

@@ -30,7 +30,7 @@
                 editor.session.setUseWrapMode(true);
 
                 // set the mode (ie syntax highlighting)
-                editor.getSession().setMode('ace/theme/' + this.data('mode'));
+                editor.getSession().setMode('ace/mode/' + this.data('mode'));
                 editor.setTheme('ace/theme/' + this.data('theme'));
                 const lineHeight = (editor.renderer.lineHeight > 1 ? editor.renderer.lineHeight : 16)
 
