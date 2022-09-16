@@ -37,6 +37,6 @@ This package was highly inspired by these two packages:
 
 - [https://github.com/jinjie/codeeditorfield](https://github.com/jinjie/codeeditorfield)
 
-- [https://github.com/nathancox/silverstripe-codeeditorfield](https://github.com/jinjie/codeeditorfield)
+- [https://github.com/nathancox/silverstripe-codeeditorfield](https://github.com/nathancox/silverstripe-codeeditorfield)
 
 
