@@ -2,19 +2,19 @@
     $.entwine(function($) {
         $("textarea.codeeditor").entwine({
             onmatch: function() {
-                var textarea = this;
+                const textarea = this
 
                 // hide the textarea
                 this.hide();
 
                 // create the editor div
-                var divID = this.attr('id');
-                var $div = divID
+                const divID = this.attr('id')
+                const $div = divID
 
                 $($div).insertAfter(this);
                 ace.config.set('modePath', this.data('ace-path'));
                 ace.config.set('themePath', this.data('ace-path'));
-                var editor = ace.edit(divID);
+                const editor = ace.edit(divID)
 
                 // make the editor update the textarea content
                 editor.getSession().setValue(textarea.val());
@@ -30,9 +30,9 @@
                 editor.session.setUseWrapMode(true);
 
                 // set the mode (ie syntax highlighting)
-                editor.getSession().setMode(this.data('mode'));
+                editor.getSession().setMode('ace/theme/' + this.data('mode'));
                 editor.setTheme('ace/theme/' + this.data('theme'));
-                var lineHeight = (editor.renderer.lineHeight > 1 ? editor.renderer.lineHeight : 16)
+                const lineHeight = (editor.renderer.lineHeight > 1 ? editor.renderer.lineHeight : 16)
 
                 $($div).css('min-height', lineHeight * textarea.attr('rows') + 35 + 'px');
 
