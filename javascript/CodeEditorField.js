@@ -36,8 +36,8 @@
 
                 $($div).css('min-height', lineHeight * textarea.attr('rows') + 35 + 'px');
 
+                editor.setOption("maxLines", 1000)
                 editor.resize(true);
-                this.setEditor(editor);
                 this.addClass('done');
 
                 this._super();
