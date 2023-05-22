@@ -1,0 +1,29 @@
+{
+    "name": "kevingroeger/codeeditorfield",
+    "description": "Code editor field for SilverStripe 4 and 5",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "silverstripe",
+        "code",
+        "editor",
+        "field"
+    ],
+    "authors": [
+        {
+            "name": "Kevin Gröger",
+            "email": "kgroeger92@gmail.com"
+        }
+    ],
+    "extra": {
+        "expose": [
+            "resources/thirdparty/ace",
+            "resources/javascript"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "silverstripe/framework": "^4 || ^5"
+    }
+}
