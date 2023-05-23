@@ -21,6 +21,11 @@
             "resources/javascript"
         ]
     },
+    "autoload": {
+        "psr-4": {
+            "KevinGroeger\\CodeEditorField\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {
         "php": "^8.0",
