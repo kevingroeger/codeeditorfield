@@ -31,3 +31,16 @@ $fields->addFieldsToTab('Root.Main', [
 ## Themes & Modes
 
 For available modes and themes, see [resources/thirdparty/ace](resources/thirdparty/ace)
+
+## Contribute
+
+- [Create an Issue](https://github.com/kevingroeger/codeeditorfield/issues)
+- [Or Fork and create a PR](https://github.com/kevingroeger/codeeditorfield/fork)
+
+### Credits
+
+- Thanks to @nathancox for creating this repository https://github.com/nathancox/silverstripe-codeeditorfield
+
+- Thanks to @jinjie for creating this repository https://github.com/jinjie/codeeditorfield
+
+Both have stopped development, but this package is highly inspired by the great work of these two!
