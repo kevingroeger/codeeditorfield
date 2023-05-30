@@ -18,8 +18,7 @@
     "extra": {
         "installer-name": "codeeditorfield",
         "expose": [
-            "resources/thirdparty",
-            "resources/javascript"
+            "client"
         ]
     },
     "autoload": {
