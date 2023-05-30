@@ -13,9 +13,6 @@ class CodeEditorField extends TextareaField
 
     public function Field($properties = [])
     {
-        Requirements::javascript('kevingroeger/codeeditorfield:client/thirdparty/ace/ace.js');
-        Requirements::javascript('kevingroeger/codeeditorfield:client/javascript/CodeEditorField.js');
-
         $this->addExtraClass('codeeditorfield stacked');
         return parent::Field($properties);
     }

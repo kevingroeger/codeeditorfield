@@ -1,0 +1,4 @@
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    - 'kevingroeger/codeeditorfield: client/thirdparty/ace/ace.js'
+    - 'kevingroeger/codeeditorfield: client/javascript/CodeEditorField.js'
