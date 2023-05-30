@@ -1,6 +1,6 @@
 <?php
 
-namespace LiterallySomethingElse\CodeEditorField\Forms;
+namespace KevinGroeger\CodeEditorField\Forms;
 
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\View\Requirements;
