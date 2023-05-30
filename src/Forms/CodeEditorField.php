@@ -56,7 +56,12 @@ class CodeEditorField extends TextareaField
      */
     public function setMode($mode): static
     {
-        $this->mode = $mode;
+        if (str_contains($mode, 'ace/mode/')) {
+            $this->mode = $mode;
+        } else {
+            $this->mode = 'ace/mode/' . $mode;
+        }
+
         return $this;
     }
 
@@ -74,7 +79,12 @@ class CodeEditorField extends TextareaField
      */
     public function setTheme($theme): static
     {
-        $this->theme = $theme;
+        if (str_contains($theme, 'ace/theme/')) {
+            $this->theme = $theme;
+        } else {
+            $this->theme = 'ace/theme/' . $theme;
+        }
+
         return $this;
     }
 }
