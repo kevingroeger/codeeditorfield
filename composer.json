@@ -1,7 +1,7 @@
 {
     "name": "kevingroeger/codeeditorfield",
     "description": "Code editor field for SilverStripe 4 and 5",
-    "type": "silverstripe-vendormodule",
+    "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "keywords": [
         "silverstripe",
