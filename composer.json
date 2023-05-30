@@ -7,7 +7,7 @@
         "silverstripe",
         "code",
         "editor",
-        "field"
+        "formfield"
     ],
     "authors": [
         {
@@ -16,8 +16,9 @@
         }
     ],
     "extra": {
+        "installer-name": "codeeditorfield",
         "expose": [
-            "resources/thirdparty/ace",
+            "resources/thirdparty",
             "resources/javascript"
         ]
     },
