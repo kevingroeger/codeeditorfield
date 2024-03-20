@@ -4,4 +4,4 @@
     data-field="{$Name}"
     data-theme="{$Theme}"
     data-mode="{$Mode}">$Value</div>
-<textarea $AttributesHTML style="display: none;">{$Value.RAW}</textarea>
+<textarea $AttributesHTML style="display: none;">{$Value.ATT}</textarea>
