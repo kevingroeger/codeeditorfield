@@ -2,10 +2,11 @@
 
 Creates an Ace Code Editor (https://ace.c9.io/)
 
+Feel free to contribute, ask questions or report issues!
+
 ## Requirements
 
-- Silverstripe 4+, 5+, 6+
-  - I personally could not test this on version 6. Please report any issues!
+- Silverstripe 4 - 6
 - PHP 8+
 
 ## Installation
